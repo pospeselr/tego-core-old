@@ -28,6 +28,13 @@ SOURCES +=\
 INCLUDEPATH +=\
     $${FMT_INCLUDE_DIR}
 
+!isEmpty(OPENSSLDIR) {
+    INCLUDEPATH += $${OPENSSLDIR}/include
+} else {
+
+
+}
+
 # tor sources
 TOR_ROOT_DIR = $${PWD}/../extern/tor
 TOR_SOURCE_DIR = $${TOR_ROOT_DIR}/src
