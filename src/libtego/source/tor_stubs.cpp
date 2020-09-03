@@ -46,4 +46,9 @@ extern "C"
         (void)fn;
         (void)format;
     }
+
+    const char* tor_fix_source_file(const char* fname)
+    {
+	return fname;
+    }
 }
